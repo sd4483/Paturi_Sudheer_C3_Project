@@ -71,6 +71,10 @@ class RestaurantTest {
 
     @Test
     public void return_total_order_value_of_selected_items_in_menu(){
+        ArrayList<String> itemNames = new ArrayList<String>();
+        itemNames.add("Sweet corn soup");
+        itemNames.add("Vegetable lasagne");
         int orderTotal = restaurant.orderValue(itemNames);
+        assertEquals(388,orderTotal);
     }
 }
