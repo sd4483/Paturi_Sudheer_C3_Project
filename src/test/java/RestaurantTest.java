@@ -64,4 +64,13 @@ class RestaurantTest {
                 () -> restaurant.removeFromMenu("French fries"));
     }
     //<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    //add another method that returns the order value, given the name of the items in <String> format
+    //Pass the names of the items as parameters to the method
+    //return ordertotal
+
+    @Test
+    public void return_total_order_value_of_selected_items_in_menu(){
+        int orderTotal = restaurant.orderValue(itemNames);
+    }
 }
